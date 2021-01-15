@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="UTF-8j">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meryem lalouli projt de calculator</title>
+    <style>
+    #{
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    body{
+        background-image: url(26.jpg);
+    }
+    form{
+        margin: 100px auto;
+        width: 340px;
+        height: 455px;
+    }
+    input{
+        width: 80px;
+        height: 70px;
+        border: 3px solid rgb(11, 9, 14);
+        font-size: 30px;
+    }
+    input.screen {
+        width: 100%;
+        background-color: rgb(90, 86, 86);
+        color: white;
+        padding: 2px;
+    }
+    input.equal {
+        height: 290px;
+        background-color: blueviolet;
+    }
+    </style>
+</head>
+<body>
+    <center>
+    <h1 style="background-color: antiquewhite;">meryem lalouli projt de calculatrice</h1>
+    </center>
+    <form name="calculator">
+        <table>
+            <tr>
+                <td colspan="4"><input type="textfield" value="" name="screen" class="screen"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="+" onclick="document.calculator.screen.value+='+'"></td>
+                <td><input type="button" value="-" onclick="document.calculator.screen.value+='-'"></td>
+                <td><input type="button" value="*" onclick="document.calculator.screen.value+='*'"></td>
+                <td><input type="button" value="/" onclick="document.calculator.screen.value+='/'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="document.calculator.screen.value+='7'"></td>
+                <td><input type="button" value="8" onclick="document.calculator.screen.value+='8'"></td>
+                <td><input type="button" value="9" onclick="document.calculator.screen.value+='9'"></td>
+                <td rowspan="4"><input type="button" value="=" onclick="document.calculator.screen.value=eval(document.calculator.screen.value)" class="equal"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="document.calculator.screen.value+='4'"></td>
+                <td><input type="button" value="5" onclick="document.calculator.screen.value+='5'"></td>
+                <td><input type="button" value="6" onclick="document.calculator.screen.value+='6'"></td>
+            </tr>      
+            <tr>
+                <td><input type="button" value="1" onclick="document.calculator.screen.value+='1'"></td>
+                <td><input type="button" value="2" onclick="document.calculator.screen.value+='2'"></td>
+                <td><input type="button" value="3" onclick="document.calculator.screen.value+='3'"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="0" onclick="document.calculator.screen.value+='0'"></td>
+                <td><input type="button" value="." onclick="document.calculator.screen.value+='.'"></td>
+                <td><input type="reset" value="C"></td>
+            </tr>
+            <tr>   
+        </table>
+    </form>
+</body>
+</html>
